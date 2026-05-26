@@ -1,12 +1,14 @@
+
 version: 2
 
 models:
-  - name: stg_sales
-    columns:
-      - name: order_id
-        tests: [not_null, unique]
+    - name: stg_product
+      description: "A starter dbt model"
+      columns:
+          - name: PRODUCT_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
 
-  - name: stg_products
-    columns:
-      - name: product_id
-        tests: [not_null, unique]
+   
