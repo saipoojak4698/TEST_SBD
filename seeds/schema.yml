@@ -1,0 +1,11 @@
+version: 2
+
+seeds:
+  - name: sales
+    description: "Raw sales data"
+
+  - name: returns
+    description: "Return data"
+
+  - name: products
+    description: "Product master data"
